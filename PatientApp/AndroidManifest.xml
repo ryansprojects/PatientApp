@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.teamrehab.patientapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.teamrehab.patientapp.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.teamrehab.patientapp.ExerciseFinish"
+            android:label="@string/title_activity_exercise_finish"
+            android:parentActivityName="com.teamrehab.patientapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.teamrehab.patientapp.MainActivity" />
+        </activity>
+        <activity
+            android:name="com.teamrehab.patientapp.ExerciseBegin"
+            android:label="@string/title_activity_exercise_begin"
+            android:parentActivityName="com.teamrehab.patientapp.MainActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.teamrehab.patientapp.MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
